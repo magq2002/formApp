@@ -38,9 +38,10 @@ export class BasicPageComponent {
           return 'Este campo es requerido';
 
         case 'minlength':
-          return 'El campo debe tener minimo 3 letras';
+          return `Mínimo ${ errors['minlength'].requiredLength } caracters.`;
       }
     }
+    
     return null;
     
   }
